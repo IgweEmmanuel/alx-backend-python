@@ -9,4 +9,4 @@ def sum_mixed_list(mxd_lst: List[int]) -> float:
     """
     Returns sum of mixed list
     """
-    return sum(mxd_list)
+    return sum(mxd_lst)
