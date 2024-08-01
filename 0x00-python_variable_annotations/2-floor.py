@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import math
-
 """floor of arguement"""
 
 
@@ -9,4 +7,4 @@ def floor(n: float) -> int:
     Args:
         n - float number
     """
-    return math.floor(n)
+    return int(n)
