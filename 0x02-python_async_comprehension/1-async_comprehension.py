@@ -3,14 +3,14 @@
 Async comprehension
 """
 import asyncio
-from typing import AsyncGenerator
+from typing import List
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension() -> AsyncGenerator[float, None]:
+async def async_comprehension() -> List[float]:
     """
     Async comprehension function
     Return: async comprehension
     """
-    res = [i async for i in async_generator for _ in range(10)]
+    res = [i async for i in async_generator()]
     return res
