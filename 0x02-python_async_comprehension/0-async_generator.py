@@ -4,9 +4,9 @@ A coroutine called async_generator that takes no arguments.
 """
 import asyncio
 import random
+from typing import AsyncGenerator
 
-
-async def async_generator():
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     async generator function
     Return: returns random value asynchronously
