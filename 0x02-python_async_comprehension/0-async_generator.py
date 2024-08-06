@@ -12,7 +12,7 @@ async def async_generator():
     Return: returns random value asynchronously
     """
 
-    for i in range(10):
+    for _ in range(10):
         ran = random.uniform(0, 10)
-        yield ran
         await asyncio.sleep(1)
+        yield ran
